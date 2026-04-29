@@ -6,7 +6,9 @@ SECRET_KEY = 'django-insecure-90$@#brh7_8(^-(o3i7p*4#$++3&8e5q3()qdv9qfqif7#_vhd
 
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
+CORS_ALLOW_ALL_ORIGINS = True
+
 
 # ---------------------------
 # INSTALLED APPS
@@ -95,15 +97,10 @@ WSGI_APPLICATION = 'core.wsgi.application'
 # ---------------------------
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'playto_db',
-        'USER': 'postgres',
-        'PASSWORD': '8827',
-        'HOST': 'localhost',
-        'PORT': '5432',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
-
 # ---------------------------
 # PASSWORD VALIDATION
 # ---------------------------
