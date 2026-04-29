@@ -16,6 +16,12 @@ Including another URLconf
 """
 from django.urls import path, include
 
+from django.http import HttpResponse
+
+def home(request):
+    return HttpResponse("Playto Backend Running 🚀")
+
 urlpatterns = [
+    path('', home),
     path('api/', include('payout.urls')),
 ]
