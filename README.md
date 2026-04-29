@@ -69,7 +69,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
-
+For running Locally
 Backend:
 cd backend
 python manage.py runserver
@@ -77,3 +77,8 @@ python manage.py runserver
 Frontend:
 cd frontend
 npm start
+
+Live Demo:
+
+Frontend: https://your-app.vercel.app  
+Backend API: https://playto-b8aa.onrender.com/api/v1/balance/1/
